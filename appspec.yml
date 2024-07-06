@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "handson12"
+        TaskDefinition: "git-task"
         LoadBalancerInfo:
           ContainerName: "handson"
           ContainerPort: 80
