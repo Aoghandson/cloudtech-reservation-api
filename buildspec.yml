@@ -27,4 +27,6 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"handson","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
-  files: imagedefinitions.json
+  files:
+    - imagedefinitions.json
+    - appspec.yml  # ここでAppSpecファイルを指定
